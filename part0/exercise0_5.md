@@ -17,6 +17,8 @@ sequenceDiagram
     activate server
     server->>browser: JS file
     deactivate server
+    
+    Note right of browser: Browser executes JS which leads to next GET request
 
     browser->>server: https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
